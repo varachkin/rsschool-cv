@@ -16,7 +16,8 @@
   2011-2015\
   electronic engineer
 * IT Academy Course Front End\
-2020\
+2020
+
 Examples:\
 <https://varachkin.github.io/Pizza/>
 
