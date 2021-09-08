@@ -18,7 +18,7 @@
 * IT Academy Course Front End\
 2020\
 Examples:\
-<https://varachkin.github.io/Pizza/>
+<https://varachkin.github.io/Pizza/>\
 <https://varachkin.github.io/Calculator/>
 
 ### Work
