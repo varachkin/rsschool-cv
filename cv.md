@@ -17,7 +17,7 @@
   electronic engineer
 * IT Academy Course Front End\
 2020\
-Examples:
+Examples:\
 <https://varachkin.github.io/Pizza/>
 
 
