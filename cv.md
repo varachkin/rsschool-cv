@@ -17,8 +17,10 @@
   electronic engineer
 * IT Academy Course Front End\
 2020\
-Examples:\
-<https://varachkin.github.io/Pizza/>\
+Examples:
+<https://varachkin.github.io/Pizza/>
+
+
 <https://varachkin.github.io/Calculator/>
 
 ### Work
@@ -30,23 +32,23 @@ System Administrator
 ### Skills
 
 * Language
-   1. HTML - 85%
-   1. SASS - 60%
-   1. LESS - 60%
-   1. CSS - 82%
-   1. JS - 37%
-   1. MD - 56%
-   1. C - 20%
+   + HTML - 85%
+   + SASS - 60%
+   + LESS - 60%
+   + CSS - 82%
+   + JS - 37%
+   + MD - 56%
+   + C - 20%
 * Control version
-   1. Git - 73%
+   + Git - 73%
 * Development tools
-   1. Web Storm - 85%
-   1. Microsoft Visual Code - 60%
-   1. Sublime text - 73%
-   1. Figma - 58%
-   1. Adobe Photoshop - 82%
-   1. Koala - 37%
-   1. Fiddler - 42%
+   + Web Storm - 85%
+   + Microsoft Visual Code - 60%
+   + Sublime text - 73%
+   + Figma - 58%
+   + Adobe Photoshop - 82%
+   + Koala - 37%
+   + Fiddler - 42%
 
 ### Code example
 
