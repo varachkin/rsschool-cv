@@ -273,6 +273,18 @@ ul li:hover {
     width: 80px;
 }
 
+.indent-30 {
+    text-indent: 30px;
+}
+
+.indent-60 {
+    text-indent: 60px;
+}
+
+.indent-90 {
+    text-indent: 90px;
+}
+
 .footer {
     height: 120px;
     background: linear-gradient(90deg, rgba(18, 18, 18, 0.01), #aa7804, rgba(18, 18, 18, 0.01));
