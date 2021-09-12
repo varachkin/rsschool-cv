@@ -152,6 +152,9 @@ input {
 }
 
 .menuOpen, .menuClose {
+    position: relative;
+    top: 0;
+    right: 0;
     display: none;
 }
 
@@ -159,18 +162,26 @@ input {
     background-color: rgb(45, 45, 45);
     position: absolute;
     top: -200px;
-    right: 0px;
-    transition: 2s;
+    right: 0;
+    transition: 1s;
 }
 
 #menuCheck:checked ~ .menuList {
     top: 0;
 }
 
-#menuCheck:checked ~ #close {
+#menuCheck:checked ~ .menuOpen {
+    display: none;
+}
+
+#menuClose:checked ~ .menuList {
+    top: -200px;
+}
+
+#menuCheck:checked ~ .menuClose {
     display: inline-block;
     position: relative;
-    z-index: 4;
+    z-index: 5;
     top: 0;
     right: 0;
 }
@@ -210,7 +221,7 @@ input {
 
 .info__contacts {
     list-style: none;
-    min-width: 310px;
+    min-width: 280px;
     padding: 7px;
     color: rgb(215, 150, 0);
 }
@@ -296,6 +307,13 @@ ul li:hover {
     cursor: default;
 }
 
+.example_task {
+    height: 80px;
+    transition: 0.3s;
+    display: block;
+    margin: 5px;
+}
+
 .list li:hover span {
     transition: 0.5s;
     color: #E39128;
@@ -320,6 +338,10 @@ ul li:hover {
     justify-content: space-between;
 }
 
+.education li {
+    margin: 0 10px;
+}
+
 .title {
     color: rgba(18, 18, 18, 0.84);
     background: linear-gradient(90deg, rgba(18, 18, 18, 0.01), #d79600, #edd88d);
@@ -327,7 +349,7 @@ ul li:hover {
     padding: 5px 20px 5px 75px;
     margin: 20px 0;
     font-size: 28px;
-    min-width: 80%;
+    width: 80%;
 }
 
 .title:hover {
@@ -409,7 +431,7 @@ ul li:hover {
 }
 
 .footer {
-    height: 120px;
+    min-height: 120px;
     background: linear-gradient(90deg, rgba(18, 18, 18, 0.01), #aa7804, rgba(18, 18, 18, 0.01));
     display: flex;
     align-items: center;
@@ -421,7 +443,14 @@ ul li:hover {
     margin: 0 40px;
 }
 
+@media all and (max-width: 1100px) {
+    .description {
+        padding: 0 12px;
+    }
+}
+
 @media all and (max-width: 790px) {
+
     .navigation__link li a {
         display: none;
     }
@@ -441,5 +470,65 @@ ul li:hover {
     .navigation__link {
         padding: 0;
         margin: 5px;
+    }
+
+    .info {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .info__contacts {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .info__contact-block {
+        display: inline-flex;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .education {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .footer div {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .title {
+        width: auto;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .header .img {
+        width: 200px;
+        top: 25px;
+    }
+}
+
+@media all and (max-width: 580px) {
+    .description {
+        font-size: 14px;
+    }
+
+    .main__name .name {
+        font-size: 30px;
+    }
+
+    .main__name .vocation {
+        font-size: 14px;
     }
 }

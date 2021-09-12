@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 <div id="top" style="position: absolute; top: 0"></div>
@@ -22,22 +25,20 @@
             <li><a href="#code_example">Code example</a></li>
             <li><a href="#top">On top</a></li>
             <li class="menu">
+                <input type="radio" id="menuCheck" name="menu">
                 <label for="menuCheck" class="menuOpen">
                     <span class="material-icons-outlined" id="menu">
                         menu
                     </span>
                 </label>
-                <input type="checkbox" id="menuCheck">
-                <input type="checkbox" id="menuClose">
-                <div class="menuList">
+                <input type="radio" id="menuClose" name="menu">
+                <label for="menuClose" class="menuClose">
+                    <span class="material-icons-outlined" id="close">
+                        close
+                    </span>
+                </label>
+                <label class="menuList">
                     <ul>
-                        <li>
-                            <label for="menuClose" class="menuClose">
-                                <span class="material-icons-outlined" id="close">
-                                    close
-                                 </span>
-                            </label>
-                        </li>
                         <li><a href="#about">About me</a></li>
                         <li><a href="#education">Education</a></li>
                         <li><a href="#work">Work</a></li>
@@ -45,14 +46,14 @@
                         <li><a href="#language">Language</a></li>
                         <li><a href="#code_example">Code example</a></li>
                     </ul>
-                </div>
+                </label>
             </li>
         </ul>
     </nav>
     <div>
         <img class="img" src="img/photo_cv.png" alt="photo">
     </div>
-    <div>
+    <div class="main__name">
         <h1 class="name">Varachkin Aliaksandr</h1>
         <h4 class="vocation">
             Front-end developer
@@ -122,12 +123,15 @@
                 <div>
                     Examples:
                 </div>
-                <div>
-                    <a target="_blank" href="https://varachkin.github.io/Pizza/">https://varachkin.github.io/Pizza/</a>
-                </div>
-                <div>
+                <div style="text-align: center;">
+                    <a target="_blank" href="https://varachkin.github.io/Pizza/">
+                        <img class="example_task" src="img/pizza.png" alt="Pizza">
+                        Pizza
+                    </a>
                     <a target="_blank" href="https://varachkin.github.io/Calculator/">
-                        https://varachkin.github.io/Calculator/</a>
+                        <img class="example_task" src="img/calc.png" alt="Calculator">
+                        Calculator
+                    </a>
                 </div>
             </li>
         </ul>
@@ -356,17 +360,21 @@
         </h2>
     </div>
     <section class="description">
-        <div>function divCon(x){</div>
-        <div class="indent-30">let num = 0, strNum = 0;</div>
-        <div class="indent-30">for(let i = 0; i &lt; x.length; i++){</div>
-        <div class="indent-60">if(typeof x[i] === "number"){</div>
-        <div class="indent-60">num += x[i];</div>
-        <div class="indent-60">}else{</div>
-        <div class="indent-90">strNum += +x[i];</div>
-        <div class="indent-60">}</div>
-        <div class="indent-30">}</div>
-        <div class="indent-30">return num - strNum;</div>
-        <div>}</div>
+        <pre>
+            <code class="js">
+    function divCon(x){
+        let num = 0, strNum = 0;
+        for(let i = 0; i < x.length; i++){
+            if(typeof x[i] === "number"){
+                num += x[i];
+            }else{
+                strNum += +x[i];
+            }
+        }
+        return num - strNum;
+    }
+            </code>
+        </pre>
     </section>
 </main>
 <footer class="footer wrapper">
