@@ -6,42 +6,82 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Varachkin A. (CV)</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
+<div id="top" style="position: absolute; top: 0"></div>
 <header class="header wrapper">
+    <nav class="navigation">
+        <ul class="navigation__link">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#language">Language</a></li>
+            <li><a href="#code_example">Code example</a></li>
+            <li><a href="#top">On top</a></li>
+            <li class="menu">
+                <input type="radio" id="menuCheck" name="menu">
+                <label for="menuCheck" class="menuOpen">
+                    <span class="material-icons-outlined" id="menu">
+                        menu
+                    </span>
+                </label>
+                <input type="radio" id="menuClose" name="menu">
+                <label for="menuClose" class="menuClose">
+                    <span class="material-icons-outlined" id="close">
+                        close
+                    </span>
+                </label>
+                <label class="menuList">
+                    <ul>
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#language">Language</a></li>
+                        <li><a href="#code_example">Code example</a></li>
+                    </ul>
+                </label>
+            </li>
+        </ul>
+    </nav>
     <div>
         <img class="img" src="img/photo_cv.png" alt="photo">
     </div>
-    <div>
-        <h1>Varachkin Aliaksandr</h1>
-        <div class="vocation">
+    <div class="main__name">
+        <h1 class="name">Varachkin Aliaksandr</h1>
+        <h4 class="vocation">
             Front-end developer
-        </div>
+        </h4>
     </div>
 </header>
 <div class="info wrapper">
-    <div class="info__contacts">
+    <ul class="info__contacts">
         <h3>Contacts</h3>
-        <hr>
-        <div class="info__contact-block">
+        <li class="info__contact-block">
             <img src="img/phone.png" alt="Tel.">
             <span>+375 29 306 84 22</span>
-        </div>
-        <div class="info__contact-block">
+        </li>
+        <li class="info__contact-block">
             <img src="img/gmail.png" alt="E-mail">
             <a href="mailto:varachkin@gmail.com">varachkin@gmail.com</a>
-        </div>
-        <div class="info__contact-block">
+        </li>
+        <li class="info__contact-block">
             <img src="img/skype.png" alt="skype.">
             <a href="skype:aliaksander.varochkin">aliaksander.varochkin</a>
-        </div>
-        <div class="info__contact-block">
+        </li>
+        <li class="info__contact-block">
             <img src="img/telegram.png" alt="telegram.">
             <a href="https://telegram.me/tretiy_iz_soroka_semi">Telegram</a>
-        </div>
-    </div>
+        </li>
+    </ul>
     <div class="info__about">
-        <div class="title-block">
+        <div class="title-block" id="about">
             <h2 class="title">
                 About me
             </h2>
@@ -55,12 +95,12 @@
 </div>
 <hr class="wrapper">
 <main class="main wrapper">
-    <div class="title-block">
+    <div class="title-block" id="education">
         <h2 class="title">
             Education
         </h2>
     </div>
-    <div class="description">
+    <section class="description">
         <ul class="education">
             <li>
                 <div>
@@ -83,31 +123,35 @@
                 <div>
                     Examples:
                 </div>
-                <div>
-                    <a target="_blank" href="https://varachkin.github.io/Pizza/">https://varachkin.github.io/Pizza/</a>
-                </div>
-                <div>
-                    <a target="_blank" href="https://varachkin.github.io/Calculator/">https://varachkin.github.io/Calculator/</a>
+                <div style="text-align: center;">
+                    <a target="_blank" href="https://varachkin.github.io/Pizza/">
+                        <img class="example_task" src="img/pizza.png" alt="Pizza">
+                        Pizza
+                    </a>
+                    <a target="_blank" href="https://varachkin.github.io/Calculator/">
+                        <img class="example_task" src="img/calc.png" alt="Calculator">
+                        Calculator
+                    </a>
                 </div>
             </li>
         </ul>
-    </div>
-    <div class="title-block">
+    </section>
+    <div class="title-block" id="work">
         <h2 class="title">
             Work
         </h2>
     </div>
-    <div class="description">
+    <section class="description">
         <div>Gomel Pharmacy</div>
         <div>2015 - 2021</div>
         <div>System Administrator</div>
-    </div>
-    <div class="title-block">
+    </section>
+    <div class="title-block" id="skills">
         <h2 class="title">
             Skills
         </h2>
     </div>
-    <div class="description">
+    <section class="description">
         <ul>
             <li>
                 <span>Language</span>
@@ -290,13 +334,13 @@
                 </ul>
             </li>
         </ul>
-    </div>
-    <div class=" title-block">
+    </section>
+    <div class=" title-block" id="language">
         <h2 class="title">
             Language
         </h2>
     </div>
-    <div class="description">
+    <section class="description">
         <div class="languages">
             <span>Russian:</span>
             <span>Native speaker</span>
@@ -309,35 +353,39 @@
             <span>English:</span>
             <span>A2</span>
         </div>
-    </div>
-    <div class=" title-block">
+    </section>
+    <div class=" title-block" id="code_example">
         <h2 class="title">
             Code example
         </h2>
     </div>
-    <div class="description">
-        <div>function divCon(x){</div>
-        <div class="indent-30">let num = 0, strNum = 0;</div>
-        <div class="indent-30">for(let i = 0; i &lt; x.length; i++){</div>
-        <div class="indent-60">if(typeof x[i] === "number"){</div>
-        <div class="indent-60">num += x[i];</div>
-        <div class="indent-60">}else{</div>
-        <div class="indent-90">strNum += +x[i];</div>
-        <div class="indent-60">}</div>
-        <div class="indent-30">}</div>
-        <div class="indent-30">return num - strNum;</div>
-        <div>}</div>
-    </div>
+    <section class="description">
+        <pre>
+            <code class="js">
+    function divCon(x){
+        let num = 0, strNum = 0;
+        for(let i = 0; i < x.length; i++){
+            if(typeof x[i] === "number"){
+                num += x[i];
+            }else{
+                strNum += +x[i];
+            }
+        }
+        return num - strNum;
+    }
+            </code>
+        </pre>
+    </section>
 </main>
 <footer class="footer wrapper">
     <div><a target="_blank" href="https://github.com/varachkin"><img src="img/gith.png" alt="Github"></a></div>
     <div>
-        <div style="font-size: 22px; text-align: center;">
+        <h5 style="font-size: 22px; text-align: center; margin: 0;">
             Created in
-        </div>
-        <div style="font-size: 32px; text-align: center;">
+        </h5>
+        <h6 style="font-size: 32px; text-align: center; margin: 0;">
             2021
-        </div>
+        </h6>
     </div>
     <div><a target="_blank" href="https://rs.school/js/"><img src="img/rs_school_js.svg" alt="RS-school"></a></div>
 </footer>
